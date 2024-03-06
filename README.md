@@ -1,2 +1,4 @@
 # go-rest-api
-Golang Restful API using Gin &amp; Gorm
+golang Restful API using Gin &amp; Gorm
+
+in this repository i will try to jump in to develop restful api using gin & gorm.
