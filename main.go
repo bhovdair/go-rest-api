@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 
+	"github.com/bhovdair/go-rest-api/config"
 	handlers "github.com/bhovdair/go-rest-api/handlers/api/v1"
 	"github.com/gin-gonic/gin"
 )
@@ -15,6 +16,8 @@ func main() {
 	router.GET("", func(context *gin.Context) {
 		context.JSON(http.StatusOK, "hello world!")
 	})
+
+	config.ConnectDB()
 
 	userHandler := handlers.NewUserHandler()
 	productCategoryHandler := handlers.NewProductCategoryHandler()
