@@ -14,8 +14,6 @@
 *.h
 *.test
 *.out
-/go.sum
-/go.mod
 /_test/
 
 # Output of the go coverage tool, specifically when used with LiteIDE
